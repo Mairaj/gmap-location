@@ -1,0 +1,24 @@
+<html>
+<head>
+	<body style="background-color:gray;">
+<div class="value_name" style="height:80%; width:50%; background-color:white; position:relative;left:25%;margin-top:6%;">
+{%for i in detail_value%}
+<img id="image" src='{{i.Developer_logo.url}}' style='height:25%; width:18%; outline:medium inset grey;position:absolute;'></img><br><br>
+<div style="height:25%; width:50%; left:30%; top:20%; position:absolute;">
+<b style="color:green;">Title:</b>{{i.project_title}}<br>
+<b style="color:green;">Country:</b>{{i.Country}}<br>
+<b style="color:green;">latitude:</b>{{i.lat}}<br>
+<b style="color:green;">longitude:</b>{{i.lng}}<br>
+<b style="color:green;">status:</b>{{i.Status}}<br>
+<b style="color:green;">Type of units:</b>{{i.Type_of_units}}<br>
+<b style="color:green;">Starting Price:</b>{{i.Starting_Price}}<br>
+<b style="color:green;">Ending Price:</b>{{i.Ending_Price}}<br>
+<b style="color:green;">Developer Website:</b>{{i.Developer_website}}</br>
+<b style="color:green;">Currency:</b>{{i.Currency}}<br>
+<b style="color:green;">Developer Name:</b>{{i.Developer_name}}<br>
+<b style="color:green;">Developer Financiing:</b>{{i.Developer_financing}}</br>
+<b style="color:green;">Review Link:</b>{{i.Review_link}}</br>
+<b style="color:green;">Availability:</b>{{i.Availability}}</br>
+</div>
+{%endfor%}
+</div>
